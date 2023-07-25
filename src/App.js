@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import DocumentUploadForm from "./components/DocumentUploadForm"
+import "./App.css"
 
-function App() {
+/**
+ * Challenge: 
+ * - Create a Document Upload  component.
+ * - Inside the Upload Component, render a styled form
+ *   with our 1 inputs and the button.
+ * - Don't worry about adding any functionality yet
+ */
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main_app">
+      <DocumentUploadForm />
     </div>
-  );
+  )
 }
 
-export default App;
+
